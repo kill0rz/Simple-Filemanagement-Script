@@ -1,0 +1,98 @@
+kill0rz Simple Filemanagement Script (killz SFS) v1.3
+
+Copyright
+#########
+
+Dieses Script darf unverändert (inklusive aller Dateien) überall zum Download angeboten werden. Ein Link zu meinem Blog wäre nett.
+Sollte Modifikationen vorgenommen worden sein, dann ist es nicht gestattet, das Script modifiziert weiterzugeben. Es dürfen aber selbstverständlich Anleitungen zu den Modifikationen verbreitet werden!
+
+Der Copyrightvermerkt im Script darf entfernt werden.
+
+Beschreibung
+############
+
+Es handelt sich hierbei um ein einfaches php-Script, welches ohne größeren Aufwand als Dateiablage genutzt werden kann.
+Über die Weboberfläche müssen sich Nutzer einloggen und können dann auf das Dateirepositorium zugreifen. Downloads werden über eine download.php gelenkt, die vorher nocheinmal den Login überprüft.
+
+Es wird empfohlen, die aktuellste php-Version zu nutzen!
+
+Installationszeit:
+##################
+
+5 Minuten
+
+
+
+Changelog
+#########
+
+v1.0 (25.01.2014)
+----
+Grundskript
+
+v1.2 (29.05.2014)
+----
+-added: Zufallsbild im eingeloggten Zustand (in den Ordner ./pics/ Bilder ablegen; wenn leer wird der Standardtext angezeigt)
+-added: Linklist auf der Startseite (siehe unten)
+-added: Linklist in jedem Ordner (siehe unten)
+-added: Hinweis in jedem Ordner (siehe unten)
+-added: Logout-Funktion
+-added: Statistiken auf Startseite
+-added: mehrere Hauptorder (Semester)
+-added: nutze immer SSL, wenn verfügbar
+-added: Dateigröße und -datum hinter jeder Datei
+-added: Zurück-Button
+-fixed: nutze PHP-Sessions statt Cookies
+-fixed: Umlaute
+
+v1.3 (20.06.2014)
+----
+-added: Sprachvariablen statt festem Text
+-fixed: automatischer Logout nach X Sekunden (einstellbar)
+-fixed: Erhöhte Sicherheit durch .htaccess
+-fixed: optische Verbesserungen
+-fixed: Automatischer Zeilenumbruch in hinweis.folder-Dateien
+
+
+Zukünftige Features:
+####################
+
+-Adminaccount
+-Registrierung per Mail
+-Dateien verschieben und umbennen in der Weboberfläche
+-Onlineprüfung auf neue Version
+
+
+
+Installation:
+#############
+
+Ladde alle Dateien im www-Ordner in dein Webverzeichnis. 
+Öffne die Datei ./adm/config.php und passe die Einträge entsprechend an. Die Einträge ganz unten stehen für die einzelnen Semester. Möchtest du diese Funktion nicht nutzen, dann entferne alle Einträge außer der 1.
+Du kannst hier beliebig viele Semester hinzufügen oder entfernen, beachte aber, dass die Dateien in dem Semester auf dem Server bleiben!
+
+Gib folgenden Dateien und Ordnern Schreib-, bzw. Ausführrechte (CHMOD 0777):
+
+	/
+		index.php
+		up.php
+		download.php
+		header.php
+		
+		/adm/failed_logins.data
+		
+		/
+			files_semsterX/				<-- X durch alle vorhandenen Semester ersetzen
+			
+			/
+			
+				_unkontrolliert/
+				
+				
+				
+Passe nun alle Texte in der ./adm/language.php an.
+Fertig, das Script läuft nun und du kannst Dateien und Ordner hinzufügen, viel Spaß! :)
+
+
+kill0rz
+20.06.2014

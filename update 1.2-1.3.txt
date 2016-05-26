@@ -1,0 +1,37 @@
+Beim Update musst du nicht viel machen, nur ein paar kleine Schritte :)
+
+1) Erstelle im Webverzeichnis den Ordner ./adm/. Verschiebe folgende Dateien in Ornder ./adm/
+
+	+ failes_logins.dat
+	+ config.php
+	
+	
+2) Lade danach alle Dateien und Ordner aus dem Ordner ./www/, außer dem Ordner ./adm/ in dein Webverzeichnis (alles überschreiben)
+3) Lade folgende Dateien aus dem Ordner ./adm/ in den Ordner ./adm/ in deinem Webverzeichnis
+
+	+ .htaccess
+	+ language.php
+	+ timecontrol.txt
+	+ version.txt
+	
+4) Öffne die Datei ./adm/config.php - Füge am Ende folgende Zeile hinzu:
+
+$maxlogintime = 60*15;								//Angabe in Sekunden, wie lange ein inaktiver User eingeloggt bleiben soll
+	
+5) Öffne die Datei ./language.php - In dieser Datei sind alle Sprachvariablen drin, die das Script verwendet, du musst ab sofort in der index.php nichts mehr anpassen, was das Update auf zukünftige Versionen stark vereinfacht.
+   Passe alle Sprachvariablen an deine Bedürfnisse an.
+   
+6) Gib der Datei ./header.php den CHMOD 0777
+   
+7) OPTIONAL: In den hinweis.folder-Dateien werden die Zeilenumbrüche nun automatisch eingefügt. Du _kannst_ die html-Zeilenumbrüche aus diesen Dateien entfernen, das Script wird sie aber ignorieren.
+
+
+
+
+Fertig! :)
+
+Lies bitte die Einleitung der Neuinstallation.txt für alle Informationen! ;)
+
+
+
+20.06.2014, kill0rz
