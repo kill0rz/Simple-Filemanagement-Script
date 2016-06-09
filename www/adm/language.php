@@ -2,17 +2,17 @@
 
 /*
 
-	killZ SFS v1.3
-	(C) 2013-2014 kill0rz
-	for further instructions visit http://blog.kill0rz.com/2013/11/25/download-kill0rz-simple-filemanagement-script/
-	
-*/
+killZ SFS v1.3
+(C) 2013-2014 kill0rz
+for further instructions visit http://blog.kill0rz.com/2013/11/25/download-kill0rz-simple-filemanagement-script/
+
+ */
 
 /*
 
 In dieser Datei stehen alle Sprachvariablen drin, die benutzt werden.
 
-*/
+ */
 
 $lang_alterpic = "CLOUD";
 $lang_back = "<-- Zurück";
