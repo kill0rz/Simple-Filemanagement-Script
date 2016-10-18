@@ -1,0 +1,3 @@
+Known Bugs:
+
++ Wenn bei einer Überschrift keine Links hinterlegt sind (Hauptseite, loggedoff), dann werden die letzten 3 Zeichen abgeschnitten
